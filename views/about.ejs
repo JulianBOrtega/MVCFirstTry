@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<title>My Portfolio - About</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+<link rel="stylesheet" href="/stylesheets/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<body>
+  <div class="mvc-top">
+    <div class="mvc-bar" id="myNavbar">
+      <a href="/" class="mvc-bar-item mvc-button">HOME</a>
+      <a href="/about" class="mvc-bar-item mvc-button mvc-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#portfolio" class="mvc-bar-item mvc-button mvc-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    </div>
+  </div>
+
+  <div class="bgimg-2 mvc-display-container mvc-opacity-min" id="home">
+    <div class="mvc-display-middle" style="white-space: nowrap">
+      <span class="mvc-center mvc-padding-large mvc-black mvc-xlarge mvc-wide mvc-animate-opacity">ABOUT</span>
+    </div>
+  </div>
+
+  <div class="mvc-content mvc-container mvc-padding-64" id="about">
+    <h3 class="mvc-center">I love linux</h3>
+    <p class="mvc-center"><em>(jk)</em></p>
+    <p>
+      I'd just like to interject for a moment. What you're referring to as Linux, is in fact, GNU/Linux, or as I've
+      recently taken to calling it, GNU plus Linux. Linux is not an operating system unto itself, but rather another
+      free component of a fully functioning GNU system made useful by the GNU corelibs, shell utilities and vital system
+      components comprising a full OS as defined by POSIX.
+
+      Many computer users run a modified version of the GNU system every day, without realizing it. Through a peculiar
+      turn of events, the version of GNU which is widely used today is often called "Linux", and many of its users are
+      not aware that it is basically the GNU system, developed by the GNU Project.
+
+      There really is a Linux, and these people are using it, but it is just a part of the system they use. Linux is the
+      kernel: the program in the system that allocates the machine's resources to the other programs that you run. The
+      kernel is an essential part of an operating system, but useless by itself; it can only function in the context of
+      a complete operating system. Linux is normally used in combination with the GNU operating system: the whole system
+      is basically GNU with Linux added, or GNU/Linux. All the so-called "Linux" distributions are really distributions
+      of GNU/Linux.
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mvc-center mvc-black mvc-padding-64 mvc-opacity mvc-hover-opacity-off">
+    <a href="#home" class="mvc-button mvc-light-grey"><i class="fa fa-arrow-up mvc-margin-right"></i>To the top</a>
+    <div class="mvc-xlarge mvc-section">
+      <i class="fa fa-facebook-official mvc-hover-opacity"></i>
+      <i class="fa fa-instagram mvc-hover-opacity"></i>
+      <i class="fa fa-snapchat mvc-hover-opacity"></i>
+      <i class="fa fa-pinterest-p mvc-hover-opacity"></i>
+      <i class="fa fa-twitter mvc-hover-opacity"></i>
+      <i class="fa fa-linkedin mvc-hover-opacity"></i>
+    </div>
+  </footer>
+
+  <script>
+    // Change style of navbar on scroll
+    window.onscroll = function () {
+      myFunction();
+    };
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (
+        document.body.scrollTop > 100 ||
+        document.documentElement.scrollTop > 100
+      ) {
+        navbar.className =
+          "mvc-bar" + " mvc-card" + " mvc-animate-top" + " mvc-white";
+      } else {
+        navbar.className = navbar.className.replace(
+          " mvc-card mvc-animate-top mvc-white",
+          ""
+        );
+      }
+    }
+  </script>
+</body>
+
+</html>
